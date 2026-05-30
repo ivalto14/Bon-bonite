@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Purchase product" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-05-30T16:33:46.905Z" hostname="IVANDESK" time="266.968">
+  <properties/>
+  <testcase name="Purchase product successfully" classname="feature_file_///C_/Users/idlop/Documents/Proyectos/Automatizacion%20Selenium/bon-bonite/src/test/resources/features/search/purchaseProduct.feature" time="46.158"/>
+  <testcase name="Validate checkout page is reached" classname="feature_file_///C_/Users/idlop/Documents/Proyectos/Automatizacion%20Selenium/bon-bonite/src/test/resources/features/search/purchaseProduct.feature" time="49.306"/>
+  <testcase name="Validate products are shown in checkout summary" classname="feature_file_///C_/Users/idlop/Documents/Proyectos/Automatizacion%20Selenium/bon-bonite/src/test/resources/features/search/purchaseProduct.feature" time="42.799"/>
+  <testcase name="Complete payment form with card data" classname="feature_file_///C_/Users/idlop/Documents/Proyectos/Automatizacion%20Selenium/bon-bonite/src/test/resources/features/search/purchaseProduct.feature" time="59.398"/>
+  <testcase name="Sign in with email and OTP validation" classname="feature_file_///C_/Users/idlop/Documents/Proyectos/Automatizacion%20Selenium/bon-bonite/src/test/resources/features/search/purchaseProduct.feature" time="69.284"/>
+  <system-out><![CDATA[
+@green @cart
+?[1mScenario:?[22m Purchase product successfully           ?[90m# src/test/resources/features/search/purchaseProduct.feature:4?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mthat the user enters the application?[39m    ?[90m# stepdefinitions.PurchaseStepDefinitions.thatTheUserEntersTheApplication()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mthe user enters the account section?[39m      ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserEntersTheAccountSection()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mthe user completes the purchase process?[39m   ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserCompletesThePurchaseProcess()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mthe products should be added to the cart?[39m ?[90m# stepdefinitions.PurchaseStepDefinitions.theProductsShouldBeAddedToTheCart()?[39m
+
+@green @checkout
+?[1mScenario:?[22m Validate checkout page is reached      ?[90m# src/test/resources/features/search/purchaseProduct.feature:11?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mthat the user enters the application?[39m   ?[90m# stepdefinitions.PurchaseStepDefinitions.thatTheUserEntersTheApplication()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mthe user enters the account section?[39m     ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserEntersTheAccountSection()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mthe user completes the purchase process?[39m  ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserCompletesThePurchaseProcess()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mthe user proceeds to checkout?[39m            ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserProceedsToCheckout()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mthe user should be on the checkout page?[39m ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserShouldBeOnTheCheckoutPage()?[39m
+
+@green @summary
+?[1mScenario:?[22m Validate products are shown in checkout summary        ?[90m# src/test/resources/features/search/purchaseProduct.feature:19?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mthat the user enters the application?[39m                   ?[90m# stepdefinitions.PurchaseStepDefinitions.thatTheUserEntersTheApplication()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mthe user enters the account section?[39m                     ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserEntersTheAccountSection()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mthe user completes the purchase process?[39m                  ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserCompletesThePurchaseProcess()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mthe user proceeds to checkout?[39m                            ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserProceedsToCheckout()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mthe order summary should contain the purchased products?[39m ?[90m# stepdefinitions.PurchaseStepDefinitions.theOrderSummaryShouldContainThePurchasedProducts()?[39m
+
+@green @payment
+?[1mScenario:?[22m Complete payment form with card data           ?[90m# src/test/resources/features/search/purchaseProduct.feature:27?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mthat the user enters the application?[39m           ?[90m# stepdefinitions.PurchaseStepDefinitions.thatTheUserEntersTheApplication()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mthe user enters the account section?[39m             ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserEntersTheAccountSection()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mthe user completes the purchase process?[39m          ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserCompletesThePurchaseProcess()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mthe user proceeds to checkout?[39m                    ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserProceedsToCheckout()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mthe user fills in the payment form?[39m               ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserFillsInThePaymentForm()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mthe payment form validation should be triggered?[39m ?[90m# stepdefinitions.PurchaseStepDefinitions.thePaymentFormValidationShouldBeTriggered()?[39m
+
+@green @signin
+?[1mScenario:?[22m Sign in with email and OTP validation              ?[90m# src/test/resources/features/search/purchaseProduct.feature:36?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mthat the user enters the application?[39m               ?[90m# stepdefinitions.PurchaseStepDefinitions.thatTheUserEntersTheApplication()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mthe user enters the account section?[39m                 ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserEntersTheAccountSection()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mthe user completes the purchase process?[39m              ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserCompletesThePurchaseProcess()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mthe user proceeds to checkout?[39m                        ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserProceedsToCheckout()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mthe user initiates sign in with email ?[1m"email"?[22m?[39m        ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserInitiatesSignInWithEmail(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mthe user should return to checkout as authenticated?[39m ?[90m# stepdefinitions.PurchaseStepDefinitions.theUserShouldReturnToCheckoutAsAuthenticated()?[39m
+]]></system-out>
+  <system-err><![CDATA[may 30, 2026 11:33:53 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 148, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 148
+]]></system-err>
+</testsuite>
